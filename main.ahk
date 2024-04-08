@@ -9,6 +9,7 @@ k:: {
     WHR.Open(Method, URL, true)
     WHR.SetRequestHeader("Content-Type", "application/json")
     WHR.Send(Body)
+    WHR.WaitForResponse()
 } 
 
 b:: {
@@ -20,4 +21,5 @@ b:: {
     WHR.Open(Method, URL, true)
     WHR.SetRequestHeader("Content-Type", "application/json")
     WHR.Send(Body)
+    WHR.WaitForResponse()
 } 
